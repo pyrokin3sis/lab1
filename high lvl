@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <iostream>
+#include <time.h>
+#include <string>
+using namespace std;
+
+/// Вариант 10 (Высокий уровень) - Написать функцию, создающую файл с данными о дисплеях из не менее 8 записей.///
+
+struct display
+{
+    char mode[25];
+    int price;
+    double x_size;
+    double y_size;
+    int optr;
+};
+ 
+void task10()
+{
+    int N = 8;
+    display Ms[N];
+ 
+    for ( int i = 0; i < N; i++)
+    {
+        cout << "\nInput mode:" << endl;
+        cin >> Ms[i].mode;
+        fprintf ("scan1[i].mode", file);
+ 
+        cout << "\nInput price:" << endl;
+        cin >> Ms[i].price;
+        fprintf ("scan1[i].price", file);
+ 
+        cout << "\nInput x_size:" << endl;
+        cin >> Ms[i].x_size;
+        fprintf ("scan1[i].x_size", file);
+ 
+        cout << "\nInput y_size:" << endl;
+        cin >> Ms[i].y_size;
+        fprintf ("scan1[i].y_size", file);
+ 
+        cout << "\nInput optr:" << endl;
+        cin >> Ms[i].optr;
+        fprintf ("scan1[i].optr", file);
+}
+
+cout <<"Films that start after 1800 and have a duration of 1:40 hours: \n";
+ for (int i = 0; i < N; i++)
+{
+     if (Ms[i].date_time > 18:00 && Ms[i].duration > 140)
+{
+        cout <<"\nBook mode:" << Ms[i].mode;
+        cout <<"\nBook price:" << Ms[i].price;
+        cout <<"\nBook x_size:" << Ms[i].x_size;
+        cout <<"\nBook y_size:" << Ms[i].y_size;
+        cout <<"\nBook optr:" << Ms[i].optr;
+}
+}
+int main()
+{
+    void task10();
+}
