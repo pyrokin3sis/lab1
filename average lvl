@@ -1,0 +1,61 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+/// Вариант 10 (Средний уровень) - Вывести данные о фильмах, начинающихся после 18:00 и продолжительностью сеанса более 1 часа 40 минут.///
+
+struct Book
+{
+    char title[50];
+    int date_time;
+    int duration;
+    char genre[50];
+    char budget[200];
+    
+    
+};
+
+void task10()
+{
+    int N = 3;
+    Book Ms[N];
+    for (int i = 0; i < N; i++)
+{
+        cout <<"\nInput title:";
+        cin.ignore(cin.rdbuf()-> in_avail());
+        cin.getline(Ms[i].title, sizeof(Ms[i].title));
+        
+        cout <<"\nInput date_time:";
+        cin >> Ms[i].date_time;
+        
+        cout <<"\nInput: duration:";
+        cin >> Ms[i].duration;
+        
+        cout <<"\nInput genge:";
+        cin.ignore(cin.rdbuf()-> in_avail());
+        cin.getline(Ms[i].genre, sizeof(Ms[i].title));
+        
+        cout <<"\nInput budget:";
+        cin.ignore(cin.rdbuf()-> in_avail());
+        cin.getline(Ms[i].budget, sizeof(Ms[i].title));
+}
+
+cout <<"Films that start after 1800 and have a duration of 1:40 hours: \n";
+ for (int i = 0; i < N; i++)
+{
+     if (Ms[i].date_time > 18:00 && Ms[i].duration > 140)
+{
+        cout <<"\nBook title:" << Ms[i].title;
+        cout <<"\nBook date_time:" << Ms[i].date_time;
+        cout <<"\nBook duration:" << Ms[i].duration;
+        cout <<"\nBook genre:" << Ms[i].genre;
+        cout <<"\nBook budget:" << Ms[i].budget;
+        
+}
+}
+}
+int main()
+{
+    task10();
+}
+
