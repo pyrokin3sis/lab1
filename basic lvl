@@ -1,0 +1,64 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+ 
+/// Variant 10 - Вывести данные о книгах в которых кол-во страниц больше 150.///
+
+struct book
+{
+    char name[50];
+    char authors[200];
+    int pages;
+    char circulation[200];
+    char published[5];
+};
+
+void task10()
+{
+    int N = 3;
+    book Ms[N];
+  for (int i = 0; i < N; i++)
+{
+
+    cout << "\nInput name: ";
+    cin.ignore(cin.rdbuf()->in_avail());
+    cin.getline(Ms[i].name, sizeof(Ms[i].name));
+    
+	cout << "\nInput authors: ";
+	cin.ignore(cin.rdbuf()->in_avail());
+	cin.getline(Ms[i].authors, sizeof(Ms[i].authors));
+	
+	cout << "\nInput circulation: ";
+	cin.ignore(cin.rdbuf()->in_avail());
+	cin.getline(Ms[i].circulation, sizeof(Ms[i].circulation));
+	
+	cout << "\nInput published: ";
+	cin.ignore(cin.rdbuf()->in_avail());
+	cin.getline(Ms[i].published, sizeof(Ms[i].published));
+
+	cout << "\nInput pages: ";
+	cin >> Ms[i].pages;
+
+}
+
+
+     cout << "\nBooks with more than 150 pages:\n";
+	for (int i = 0; i < N; i++)
+{
+		if (Ms[i].pages > 150)
+{
+cout << "\nBook Name: " << Ms[i].name;
+cout << "\nBook Authors: " << Ms[i].authors;
+cout << "\nBook pages " << Ms[i].pages;
+cout << "\nBook circulation: " << Ms[i].circulation;
+cout << "\nBook published: " << Ms[i].published; 
+		    
+}
+}
+}
+int main()
+{
+ task10();
+}
+
+
