@@ -17,30 +17,7 @@ struct display
  
 void task10()
 {
-    int N = 8;
-    display Ms[N];
- 
-    for ( int i = 0; i < N; i++)
-    {
-        cout << "\nInput mode:" << endl;
-        cin >> Ms[i].mode;
-        fprintf ("scan1[i].mode", file);
- 
-        cout << "\nInput price:" << endl;
-        cin >> Ms[i].price;
-        fprintf ("scan1[i].price", file);
- 
-        cout << "\nInput x_size:" << endl;
-        cin >> Ms[i].x_size;
-        fprintf ("scan1[i].x_size", file);
- 
-        cout << "\nInput y_size:" << endl;
-        cin >> Ms[i].y_size;
-        fprintf ("scan1[i].y_size", file);
- 
-        cout << "\nInput optr:" << endl;
-        cin >> Ms[i].optr;
-        fprintf ("scan1[i].optr", file);
+   
 }
 }
 int main()
