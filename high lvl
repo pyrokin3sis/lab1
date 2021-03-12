@@ -8,7 +8,7 @@ using namespace std;
 
 struct display
 {
-    char mode[25];
+    char mode[50];
     int price;
     double x_size;
     double y_size;
@@ -17,7 +17,21 @@ struct display
  
 void task10()
 {
-   
+int N = 8;
+    display Ms[N];
+    
+bool greater (int a, int b)
+{
+return (a>b);
+}
+
+sort(Ms.begin(), Ms.end(), greater);
+ 
+   cout << "\nBook mode: " << Ms[i].name;
+cout << "\nBook price: " << Ms[i].authors;
+cout << "\nBook pages " << Ms[i].pages;
+cout << "\nBook x_size: " << Ms[i].circulation;
+cout << "\nBook y_size: " << Ms[i].published; 
 }
 }
 int main()
