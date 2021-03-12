@@ -42,18 +42,6 @@ void task10()
         cin >> Ms[i].optr;
         fprintf ("scan1[i].optr", file);
 }
-
-cout <<"Films that start after 1800 and have a duration of 1:40 hours: \n";
- for (int i = 0; i < N; i++)
-{
-     if (Ms[i].date_time > 18:00 && Ms[i].duration > 140)
-{
-        cout <<"\nBook mode:" << Ms[i].mode;
-        cout <<"\nBook price:" << Ms[i].price;
-        cout <<"\nBook x_size:" << Ms[i].x_size;
-        cout <<"\nBook y_size:" << Ms[i].y_size;
-        cout <<"\nBook optr:" << Ms[i].optr;
-}
 }
 int main()
 {
